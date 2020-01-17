@@ -1,0 +1,28 @@
+val x = new StringBuilder("Hello")
+console
+compile
+run
+~compile
+run
+compile
+run
+compile
+run
+compile
+run
+compile
+run
+compile
+run
+console
+compile
+--help
+help
+projects
+console
+sbt compile
+copmile
+compile
+help
+projects
+exit

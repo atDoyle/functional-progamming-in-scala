@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0m/home/andrew/git-repos/functional-progamming-in-scala/chapter2/src/main/scala/example/Hello.scala:9:13: value append is not a member of String[0m
+[0m[[0m[31merror[0m] [0m[0m  val y = x.append(", World")[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
