@@ -1,11 +1,8 @@
 package example
 
-object Hello extends App {
-  println("Hello")
-}
-
-object AnotherModule extends App {
-  val x = new StringBuilder("Hello")
-  val y = x.append(", World")
-  println(x)
+object AnotherModule {
+  val x = "Hello"
+  val y = " World"
+  val z: String = x.concat(y)
+  println(x, y, z)
 }
