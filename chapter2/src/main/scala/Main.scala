@@ -42,3 +42,22 @@ object MyModule {
       else loop(n+1)
     loop(0)
   }
+
+  // Exercise 2.2
+  def isSorted[A](as: Array[A], gt: (A,A) => Boolean): Boolean = {
+    @annotation.tailrec
+    def go(n: Int): Boolean =
+      if (n >= as.length-1) true
+      else if (gt(as(n), as(n+1))) false
+      else go(n+1)
+
+    go(0)
+  }
+
+  // Exercise 2.3
+def curry[A,B,C](f: (A, B) => C): A => (B => C) =
+  a => b => f(a, b)
+
+  // Exercise 2.4
+  def uncurry[A,B,C](f: A => B => C): (A, B) => C
+    (a: A, b: B) => f(a)
