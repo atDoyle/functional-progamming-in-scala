@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0m/home/andrew/git-repos/functional-progamming-in-scala/chapter3/src/main/scala/Main.scala:10:33: not found: value sum[0m
+[0m[[0m[31merror[0m] [0m[0m        case Cons(x, xs) => x + sum(xs)[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
