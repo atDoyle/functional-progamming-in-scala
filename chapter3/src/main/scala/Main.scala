@@ -41,7 +41,25 @@ object List {
         case Nil => Nil
         case Cons(h, t) => if (f(h)) dropWhile(t, f) else l
     }
-}
+
+    def init[A](l: List[A]): List[A] = l match {
+        case Nil => sys.error("Empty list.")
+        case Cons(_, Nil) => Nil
+        case Cons(h, t) => Cons(h, init(t))
+    }
+
+    def foldRight[A,B](as: List[A], z: B)(f: (A,B) => B): B =
+        as match {
+            case Nil => z
+            case Cons(x, xs) => f(x, foldRight(xs, z)(f))
+        }
+    
+    @annotation.tailrec
+    def foldLeft[A,B](l: List[A], z: B)(f: (B, A) => B): B = l match { 
+        case Nil => z
+        case Cons(h,t) => foldLeft(t, f(z,h))(f)
+        }
+    }
 
 
 // Exercise 3.1
@@ -56,9 +74,25 @@ object Exercises {
         }
     }
 
+    def length2[A](as: List[A]): Int = {
+        List.foldLeft(as, 0)((acc, _) => acc + 1)
+    }
+
+    def sum3(ns: List[Int]) = {
+        List.foldLeft(ns, 0)(_+_)
+    }
+
+    def product3(ns: List[Int]) = {
+        List.foldLeft(ns, 1)(_*_)
+    }
+
+    def reverse[A](ns: List[A]): List[A] = {
+        List.foldLeft(ns, List[A]())((acc,h) => Cons(h,acc))
+        }
+
     def main(args: Array[String]): Unit = {
-        val x = List(1,2,3,4,5)
-        println(x)
-        println(List.dropWhile(x, (f: Int) => f%3!=0))
+        val y = List(1,2,3,4,5)
+        println(y)
+        println(reverse(y))
     }
 }
