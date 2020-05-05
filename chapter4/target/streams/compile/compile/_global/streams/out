@@ -1,0 +1,9 @@
+[0m[[0m[31merror[0m] [0m[0m/home/andrew/git-repos/functional-progamming-in-scala/chapter2/src/main/scala/Main.scala:33:44: not enough arguments for method abs: (n: Int)Int.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter n.[0m
+[0m[[0m[31merror[0m] [0m[0m    formatResult("absolute value", -42, abs())[0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/andrew/git-repos/functional-progamming-in-scala/chapter2/src/main/scala/Main.scala:34:43: not enough arguments for method factorial: (n: Int)Int.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter n.[0m
+[0m[[0m[31merror[0m] [0m[0m    formatResult("factorial", 8, factorial())[0m
+[0m[[0m[31merror[0m] [0m[0m                                          ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

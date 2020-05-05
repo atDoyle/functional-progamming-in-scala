@@ -1,0 +1,77 @@
+val x = new StringBuilder("Hello")
+console
+compile
+run
+~compile
+run
+compile
+run
+compile
+run
+compile
+run
+compile
+run
+compile
+run
+console
+compile
+--help
+help
+projects
+console
+sbt compile
+copmile
+compile
+help
+projects
+exit
+console
+ls
+run
+run MyModule
+show
+show DiscoveredMainClass
+run
+show discoveredMainClasses
+run Main
+help
+projects
+project
+help
+about
+hepl
+help
+tasks
+runMain
+tasks runMain
+runMain
+run
+Main.MyModule
+run Main.MyModule
+help
+run help
+help run
+help runMain
+runMain main
+runMain MyModule
+runMain AnotherModule
+run
+runMain example.AnotherModule
+run example.AnotherModule
+scala
+console
+sroriuM
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
+compile
+console
