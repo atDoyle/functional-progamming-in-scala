@@ -3,12 +3,12 @@ package fpinscala.laziness
 import Stream._
 trait Stream[+A] {
 
-  def toListRecursive: List[A] = this match {
-    case Cons(h,t) => h() :: t().toListRecursive
+  def toList: List[A] = this match {
+    case Cons(h,t) => h() :: t().toList
     case _ => List()
   }
 
-  def toList: List[A] = {
+  def toListRecursive: List[A] = {
     @annotation.tailrec
     def go(s: Stream[A], acc: List[A]): List[A] = s match {
       case Cons(h,t) => go(t(), h() :: acc)
